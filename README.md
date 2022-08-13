@@ -1,7 +1,7 @@
 ## REACT IVANDJOH
 
 ### About
-The purpose of this `Repository` was made was just for learning `ReactJS`, although i am not `frontend developer` I feel that there is nothing wrong to learning ReactJS, so what do we learn?
+The purpose of this `Repository` was made was just for learning `ReactJS`, although i am not `frontend developer`, but I feel that there is nothing wrong to learning ReactJS, so what do we learn?
 
 Here are the Steps that i take :
 
