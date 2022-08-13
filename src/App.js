@@ -1,20 +1,27 @@
 import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
 
 function App() {
 
   return (
-    <div className="big-text">
-      <Contents />
-    </div>
+    <>
+      <Container>
+        <Row>
+          <Col>
+            <Contents name="John" age="25" />
+          </Col>
+        </Row>
+      </Container>
+    </>
   );
 }
 
 
-const Contents = () => {
+const Contents = (props) => {
   return (
     <div>
-      <h1>Hello World</h1>
-      <p>This is a simple React app.</p>
+      <h1>{props.name}</h1>
+      <p>{props.age}.</p>
     </div>
   );
 }
