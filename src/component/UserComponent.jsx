@@ -3,7 +3,7 @@ import React, {
     useState
 } from 'react';
 
-import { getUsersList } from '../services/usersLists';
+import getUsersList from '../services/usersLists';
 import styles from './App.module.css';
 
 function UserComponent() {
