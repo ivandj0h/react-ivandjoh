@@ -1,34 +1,28 @@
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
-
 import {
-  UserComponent,
-  ItenaryComponent,
-  ListComponent,
-  CardComponent,
-  StatesComponent
-} from './component';
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from 'react-router-dom';
+import Home from './pages/Home';
+import Data from './pages/Data';
 
 function App() {
-
-  const data = {
-    title: 'Lorem Ipsum',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-  }
-
   return (
     <>
-      <Container className="mx-auto my-4">
-        <Row>
-          <Col>
-            <UserComponent />
-            <ItenaryComponent />
-            <ListComponent />
-            <CardComponent {...data} />
-            <StatesComponent />
-          </Col>
-        </Row>
-      </Container>
+      <Router>
+        <Routes>
+          {/* <ul>
+            <li><Link to="/events">Events</Link></li>
+            <li><Link to="/date">Date</Link></li>
+            <li><Link to="/accueil">Accueil</Link></li>
+          </ul> */}
+          <Route path='/' element={<Home />}>Home</Route>
+          <Route path='/data' element={<Data />}>Data</Route>
+          <Route path='*' element={<h4>Page Not Found!</h4>} />
+        </Routes>
+      </Router>
     </>
   );
 }
