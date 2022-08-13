@@ -1,14 +1,21 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import CardComponent from './component/CardComponent';
 
 function App() {
 
+
+  const contents = {
+    title: 'This is a title',
+    description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
+  }
+
   return (
     <>
-      <Container>
+      <Container className="mx-auto my-4">
         <Row>
           <Col>
-            <Contents name="John" age="25" />
+            <CardComponent {...contents} />
           </Col>
         </Row>
       </Container>
@@ -16,14 +23,5 @@ function App() {
   );
 }
 
-
-const Contents = (props) => {
-  return (
-    <div>
-      <h1>{props.name}</h1>
-      <p>{props.age}.</p>
-    </div>
-  );
-}
 
 export default App;
