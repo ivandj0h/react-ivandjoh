@@ -6,6 +6,7 @@ import {
   ItenaryComponent,
   ListComponent,
   CardComponent,
+  StatesComponent
 } from './component';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
             <ItenaryComponent />
             <ListComponent />
             <CardComponent {...data} />
+            <StatesComponent />
           </Col>
         </Row>
       </Container>

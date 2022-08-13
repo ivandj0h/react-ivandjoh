@@ -12,6 +12,7 @@ Here are the `topics` that i take :
 - `Props`
 - `Ternary Operators`
 - `CSS Modules`
+- `States`
 
 | Title | Description |
 | --- | ----------- |
@@ -20,4 +21,5 @@ Here are the `topics` that i take :
 | `Props` | `Props` are arguments passed into React components. |
 | `Ternary Operators` | The `Ternary Operator` is a simplified conditional operator like `if` / `else`. |
 | `CSS Modules` | `CSS Modules`  is a great approach for making CSS locally scoped and for preventing naming clashes in medium to large projects. |
+| `States` | `States`  is a built-in React object that is used to contain data or information about the component. . |
 
