@@ -11,4 +11,4 @@ function ItenaryComponent() {
     )
 }
 
-export default ItenaryComponent
+export default ItenaryComponent;

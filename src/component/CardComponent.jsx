@@ -10,7 +10,7 @@ function CardComponent({ title, description }) {
                     bg={variant.toLowerCase()}
                     key={variant}
                     text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
-                    style={{ width: '18rem' }}
+                    style={{ width: '50rem' }}
                     className="mb-2"
                 >
                     <Card.Header><strong>{title}</strong></Card.Header>
@@ -24,4 +24,4 @@ function CardComponent({ title, description }) {
     )
 }
 
-export default CardComponent
+export default CardComponent;
