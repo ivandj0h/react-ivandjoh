@@ -6,7 +6,7 @@ function ItenaryComponent() {
     const success = true;
     return (
         <div>
-            {success ? <h3 className={styles.success}>Success</h3> : <h3 className={styles.error}>Failure</h3>}
+            {success ? <h5 className={styles.success}>Success</h5> : <h5 className={styles.error}>Failure</h5>}
         </div>
     )
 }

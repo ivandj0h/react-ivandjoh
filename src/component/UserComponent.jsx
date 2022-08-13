@@ -30,6 +30,12 @@ function UserComponent() {
                     </>
                 ))}
             </ul>
+            <p style={{
+                backgroundColor: '#f5f5f5',
+                color: 'blue'
+            }}>
+                This is Paragraph
+            </p>
         </>
     )
 }

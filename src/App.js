@@ -1,7 +1,11 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import ItenaryComponent from './component/ItenaryComponent';
-import UserComponent from './component/UserComponent';
+
+import {
+  UserComponent,
+  ItenaryComponent,
+  ListComponent,
+} from './component';
 
 function App() {
 
@@ -12,6 +16,7 @@ function App() {
           <Col>
             <UserComponent />
             <ItenaryComponent />
+            <ListComponent />
           </Col>
         </Row>
       </Container>
