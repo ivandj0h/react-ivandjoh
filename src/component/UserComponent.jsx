@@ -4,6 +4,7 @@ import React, {
 } from 'react';
 
 import { getUsersList } from '../services/usersLists';
+import styles from './App.module.css';
 
 function UserComponent() {
     const [list, setList] = useState([]);
@@ -21,7 +22,7 @@ function UserComponent() {
 
     return (
         <>
-            <h3>List's of Users</h3>
+            <h3 className={`${styles.error} ${styles.h3}`}>List's of Users</h3>
             <ul>
                 {list.map(user => (
                     <>
